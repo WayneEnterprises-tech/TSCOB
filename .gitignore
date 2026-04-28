@@ -36,6 +36,4 @@ next-env.d.ts
 /data/*.db-shm
 /data/*.db-wal
 
-# Large media files (host on CDN)
-/public/*.mov
-/public/*.mp4
+# Large media files tracked via Git LFS
