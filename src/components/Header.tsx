@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { NAV_LINKS } from '@/lib/data'
@@ -48,11 +47,10 @@ export default function Header() {
                   boxShadow: '0 2px 8px rgba(180,120,0,0.12)',
                 }}
               >
-                <Image
-                  src="/logo.png"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/logo.png`}
                   alt="TSCOB Logo"
-                  width={48}
-                  height={48}
                   className="object-contain w-full h-full"
                 />
               </div>

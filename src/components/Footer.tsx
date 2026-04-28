@@ -24,7 +24,8 @@ export default function Footer() {
                   border: '1px solid rgba(255,215,0,0.25)',
                 }}
               >
-                <img src="/logo.png" alt="TSCOB Logo" className="w-full h-full object-contain" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/logo.png`} alt="TSCOB Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="text-white font-bold text-sm">TSC Oberbecksen</div>
