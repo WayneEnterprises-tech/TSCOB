@@ -18,7 +18,7 @@ export default function StartseitePage() {
         title="Tennis-Sport-Club Oberbecksen"
         subtitle="Gemeinsam spielen. Gemeinsam wachsen. Seit über 50 Jahren in Bad Oeynhausen."
         height="full"
-        videoSrc="/hero-video.mov"
+        videoSrc={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/hero-video.mov`}
       >
         <Link href="/informationen" className="btn-primary">
           Mitglied werden
